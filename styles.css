@@ -1,1 +1,120 @@
 /* your code here */
+body {
+    font-family: Arial, sans-serif;
+    background: #00C853;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 800px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product__photo {
+    flex: 1;
+    background: #E0F2F1;
+    padding: 20px;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-main img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.photo-album ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0 0;
+    list-style: none;
+}
+
+.photo-album img {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.photo-album img:hover {
+    transform: scale(1.1);
+}
+
+.product__info {
+    flex: 1;
+    padding: 20px;
+}
+
+.title h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.title span {
+    font-size: 12px;
+    color: gray;
+}
+
+.price {
+    font-size: 24px;
+    color: #D32F2F;
+    margin: 10px 0;
+}
+
+.variant h3 {
+    font-size: 16px;
+}
+
+.variant ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+.variant img {
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.variant img:hover {
+    transform: scale(1.1);
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+button {
+    background: #D32F2F;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #B71C1C;
+}
